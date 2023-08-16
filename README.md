@@ -63,7 +63,19 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
     - DRF에서는 PatchAPIView는 없고, UpdateAPIView에서 둘 모두를 처리한다.
 
 
-
-
+# Serializer 직렬화 / 역직렬화
+  - form vs mode
+  - form은 HTML의 form을 다루기 위한 클래스, model은 db의 테이블을 다루기 위한 클래스.
+  - 둘 모두 직렬화기능, 유효성 체크 기능을 제공하고 있어서 본래 다른 목적의 클래스이지만 거의 비슷한 기능을 제공하는 클래스
+  - DRF의 Serializer가 이 두 가지 기능을 제공하기 때문에 기능적으로 둘과 유사해 보임.
+  - Serialization 이해를 위해 알아야 할 2가지 상황
+    - 메모리 내부, 외부 상황
+        - 데이터를 주고 받을 때 메모리 내/외부 상황이 다르기 때문에 포맷을 무시하고 아무렇게나 데이터를 전송/수신할 수 없다.
+    - 복원 시, 정보 유지
+        - 데이터를 주고 받으면서 포맷이 변할 수 있다. (int->string, string->int)
+        --> 이런 상황이 문제점으로 극명히 드러나는 떄가 class를 다룰때이다.
+        | class | 비고 |
+        |-------|-----|
+        ||
 
 
