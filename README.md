@@ -19,6 +19,7 @@ View > APIView > GenericAPIView + Mixin > ModelView Set
 # 
 GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 |APIView|구동 원리|역할|HTTP 관점|
+|---|---|---|---|
 |CreateAPIView|GenericAPIView + CreateModelMixin| Create |
 |DestroyAPIView|GenericAPIView + DestroyModelMixin| Delete |
 |ListAPIView|GenericAPIView + ListModelMixin| Read |
