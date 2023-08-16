@@ -15,11 +15,14 @@
 #
 개념적으로 mixins 클래스들을 모아 Generics 클래스들을 만들었고, 이들을 모아 viewSets 클래스들을 만들었다.
 # 
-View > APIView > GenericAPIView > Mixin > ModelView Set
+View > APIView > GenericAPIView + Mixin > ModelView Set
 # 
 GenericAPIView 의 기본 5가지 제네릭뷰
-  - CreateAPIView
-  - DestroyAPIView
-  - ListAPIView
-  - RetrieveAPIView
-  - UpdateAPIView
+  - CreateAPIView   = GenericAPIView + CreateModelMixin
+  - DestroyAPIView  = GenericAPIView + DestroyModelMixin
+  - ListAPIView     = GenericAPIView + ListModelMixin
+  - RetrieveAPIView = GenericAPIView + RetrieveModelMixin
+  - UpdateAPIView   = GenericAPIView + UpdateModelMixin
+
+
+
