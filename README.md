@@ -38,8 +38,8 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 | 1 | /api/post/list/ | /api2/post/ | GET | ListAPIView |
 | 2 | /api/post/99/ | /api2/post/99 | GET | RetrieveAPIView |
 | 3 | /api/comment/create/ | /api2/comment/ | POST | CreateAPIView |
-| 4 | /api/like/99/ |  | GET |  |  |
-| 5 | /api/catetag/ |  | GET |  |  |
+| 4 | /api/like/99/ |  | GET |  |
+| 5 | /api/catetag/ |  | GET |  |
 
 
 
