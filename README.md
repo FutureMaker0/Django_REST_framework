@@ -14,9 +14,9 @@
 
 #
 개념적으로 mixins 클래스들을 모아 Generics 클래스들을 만들었고, 이들을 모아 viewSets 클래스들을 만들었다.
-# 
 View > APIView > GenericAPIView + Mixin > ModelView Set
 # 
+
 # GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 | 순번 | APIView | 구동 원리 | 역할 | HTTP 관점 |
 |---|---|---|---|---|
