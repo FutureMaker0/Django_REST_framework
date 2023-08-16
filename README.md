@@ -27,7 +27,8 @@
 | 4 | RetrieveAPIView|GenericAPIView + RetrieveModelMixin | - | UPDATE, PATCH |
 | 5 | UpdateAPIView|GenericAPIView + UpdateModelMixin | Update | DELETE |
 
-ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
+ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
+ViewSet의 장점은, 테이블을 만들고 나서 테이블의 내용을 있는 그대로 간단하게 볼 수 있다는 것이 장점.
 #
 
 # DRF 변경사항 - REST 방식의 url에 맞춰 코딩
