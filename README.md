@@ -1,6 +1,6 @@
 # Django_REST_framework
 
-s.M.u.V.T
+s.M.u.V.T 패턴
 1. settings.py
 2. Models.py
 3. urls.py
