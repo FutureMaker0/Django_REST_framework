@@ -1,4 +1,5 @@
 # Django_REST_framework
+  - serializers.py 코딩에 손이 많이 가는 방식
 
 # 참고할만한 사이트
   - DRF: cdrf.co
@@ -37,6 +38,8 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 | 3 | /api/comment/create/ | /api2/comment/ | POST |
 | 4 | /api/like/99/ |  | GET |
 | 5 | /api/catetag/ |  | GET |
+
+
 
 
 
