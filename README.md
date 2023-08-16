@@ -17,7 +17,7 @@
 # 
 View > APIView > GenericAPIView + Mixin > ModelView Set
 # 
-GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
+# GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 | 순번 | APIView | 구동 원리 | 역할 | HTTP 관점 |
 |---|---|---|---|---|
 | 1 | CreateAPIView|GenericAPIView + CreateModelMixin | Create | POST |
@@ -27,7 +27,7 @@ GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 | 5 | UpdateAPIView|GenericAPIView + UpdateModelMixin | Update | DELETE |
 
 ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
-
+#
 
 # DRF 변경사항 - REST 방식의 url에 맞춰 코딩
 | 순번 | AS-IS | TO-BE | 방식 |
