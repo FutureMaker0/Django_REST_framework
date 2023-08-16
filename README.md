@@ -1,6 +1,7 @@
 # Django_REST_framework
   - serializers.py(= forms.py) 코딩에 손이 많이 가는 방식
   - serializer : 클라이언트에 출력해주는 내용이나 포맷에 관련된 사항을 담당
+  - DRF serializer는 딕셔너리를 기반으로 동작하는 클래스다.
 
 # 참고할만한 사이트
   - DRF: cdrf.co
