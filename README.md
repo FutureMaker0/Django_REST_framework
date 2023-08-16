@@ -20,11 +20,11 @@ View > APIView > GenericAPIView + Mixin > ModelView Set
 GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 | 순번 | APIView | 구동 원리 | 역할 | HTTP 관점 |
 |---|---|---|---|---|
-| 1. | CreateAPIView|GenericAPIView + CreateModelMixin | Create | POST |
-| 2. | DestroyAPIView|GenericAPIView + DestroyModelMixin | Delete | GET |
-| 3. | ListAPIView|GenericAPIView + ListModelMixin | Read | GET |
-| 4. | RetrieveAPIView|GenericAPIView + RetrieveModelMixin | - | UPDATE, PATCH |
-| 5. | UpdateAPIView|GenericAPIView + UpdateModelMixin | Update | DELETE |
+| 1 | CreateAPIView|GenericAPIView + CreateModelMixin | Create | POST |
+| 2 | DestroyAPIView|GenericAPIView + DestroyModelMixin | Delete | GET |
+| 3 | ListAPIView|GenericAPIView + ListModelMixin | Read | GET |
+| 4 | RetrieveAPIView|GenericAPIView + RetrieveModelMixin | - | UPDATE, PATCH |
+| 5 | UpdateAPIView|GenericAPIView + UpdateModelMixin | Update | DELETE |
 
 ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
 
@@ -32,11 +32,11 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 # DRF 변경사항 - REST 방식의 url에 맞춰 코딩
 | 순번 | AS-IS | TO-BE | 방식 |
 |---|---|---|---|
-|1| /api/post/list/ | /api2/post/ | GET |
-|2| /api/post/99/ | /api2/post/99 | GET |
-|3| /api/comment/create/ | /api2/comment/ | POST |
-|4| /api/like/99/ |  | GET |
-|5| /api/catetag/ |  | GET |
+| 1 | /api/post/list/ | /api2/post/ | GET |
+| 2 | /api/post/99/ | /api2/post/99 | GET |
+| 3 | /api/comment/create/ | /api2/comment/ | POST |
+| 4 | /api/like/99/ |  | GET |
+| 5 | /api/catetag/ |  | GET |
 
 
 
