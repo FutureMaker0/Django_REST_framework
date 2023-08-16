@@ -1,5 +1,5 @@
 # Django_REST_framework
-  - serializers.py 코딩에 손이 많이 가는 방식
+  - serializers.py(= forms.py) 코딩에 손이 많이 가는 방식
 
 # 참고할만한 사이트
   - DRF: cdrf.co
