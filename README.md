@@ -77,6 +77,8 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
     
         | | class | 비고 |
         |--|---|---|
-        |  |<img width="163" src="https://github.com/FutureMaker0/Django_REST_framework/assets/120623320/85f4ad27-deef-4a50-b4a2-c5b8cc053270">| 가 |
+        |  |<img width="163" src="https://github.com/FutureMaker0/Django_REST_framework/assets/120623320/85f4ad27-deef-4a50-b4a2-c5b8cc053270">
+        | name변수는 string이지만 Person이란 class에 속해 있으며, age 또한 그냥 int가 아니라 Person에 속한 integer이다. Person이라는 class는 name, age라는 속성을 가진               class라는 정보가 그대로 전달되어야 한다. 이 과정에서 serialize 전처리 과정이 필요하며, 꺼내고 나서는 deserialize가 필요한 것이다. serialize 방법 중에서는 json 포맷으로
+          하는 것이 가장 간편한 방법이다. 거의 타입 변환만 해주는 수준이다. number, string, object, list, null 5가지를 주로 사용하며, 중괄호 사용 및 "" 사용만 숙지하면 된다.|
 
 
