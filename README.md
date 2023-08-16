@@ -28,3 +28,14 @@ GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 
 ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
 
+
+# DRF 변경사항 - REST 방식의 url에 맞춰 코딩
+| 순번 | AS-IS | TO-BE | 방식 |
+|1| /api/post/list/ | /api2/post/ | GET |
+|2| /api/post/99/ | /api2/post/99 | GET |
+|3| /api/comment/create/ | /api2/comment/ | POST |
+|4| /api/like/99/ |  | GET |
+|5| /api/catetag/ |  | GET |
+
+
+
