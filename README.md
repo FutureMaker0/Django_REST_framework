@@ -76,6 +76,6 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
         --> 이런 상황이 문제점으로 극명히 드러나는 떄가 class를 다룰때이다.
         | class | 비고 |
         |-------|-----|
-        |<img width="163" alt="스크린샷 2023-08-16 오후 8 16 20" src="https://github.com/FutureMaker0/Django_REST_framework/assets/120623320/85f4ad27-deef-4a50-b4a2-c5b8cc053270">| |
+        |<img width="163" src="https://github.com/FutureMaker0/Django_REST_framework/assets/120623320/85f4ad27-deef-4a50-b4a2-c5b8cc053270">| |
 
 
