@@ -56,3 +56,13 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 3. response to client
 
 
+# partial = True
+  - 필수 속성(required)가 모두 확인되지 않고 하나만 받더라도 update가 성공한다는 의미.
+  - PUT vs PATCH
+    - DRF에서는 PatchAPIView는 없고, UpdateAPIView에서 둘 모두를 처리한다.
+
+
+
+
+
+
