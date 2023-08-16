@@ -42,6 +42,16 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 | 5 | /api/catetag/ |  | GET |  |
 
 
-
+# GenericView 동작 로직
+1. data from database
+2. serialize
+  - ListAPIView vs RetrieveAPIView
+    - ListAPIView(instance = , many = True)
+        - queryset을 통해 db로부터 데이터를 가져와서 serializer_class에서 serialize한다.
+        - many 옵션을 True로 줘서 인스턴스를 여러개 serialize
+    - RetrieveAPIView(instance = , many = False)
+        - queryset을 통해 db로부터 데이터를 가져와서 serializer_class에서 serialize한다.
+        - many 옵션을 False로 줘서 인스턴스 하나만 serialize
+3. response to client
 
 
