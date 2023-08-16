@@ -23,7 +23,7 @@ GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 |CreateAPIView|GenericAPIView + CreateModelMixin| Create | POST |
 |DestroyAPIView|GenericAPIView + DestroyModelMixin| Delete | GET |
 |ListAPIView|GenericAPIView + ListModelMixin| Read | GET |
-|RetrieveAPIView|GenericAPIView + RetrieveModelMixin|  | UPDATE, PATCH |
+|RetrieveAPIView|GenericAPIView + RetrieveModelMixin| - | UPDATE, PATCH |
 |UpdateAPIView|GenericAPIView + UpdateModelMixin| Update | DELETE |
 
 
