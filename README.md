@@ -1,7 +1,7 @@
 # Django_REST_framework
 
 s.M.u.V.T 패턴
-1. settings.py
+1. settings.py - 뼈대제작
 2. Models.py
 3. urls.py
 4. View.py
