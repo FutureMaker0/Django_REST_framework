@@ -30,6 +30,7 @@
 | 4 | RetrieveAPIView|GenericAPIView + RetrieveModelMixin | - | UPDATE, PATCH |
 | 5 | UpdateAPIView|GenericAPIView + UpdateModelMixin | Update | DELETE |
 
+DRF에서 Generic이란 용어는, Database 관련 처리를 하는 경우 사용된다.
 ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
   - ViewSet의 장점은, 테이블을 만들고 나서 테이블의 내용을 있는 그대로 간단하게 볼 수 있다는 것이 장점.
 #
