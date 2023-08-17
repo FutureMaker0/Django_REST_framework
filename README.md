@@ -39,9 +39,9 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 | 순번 | AS-IS | TO-BE | 방식 | APIView 상속 |
 |---|---|---|---|---|
 | 1 | /api/post/list/ | /api2/post/ | GET | ListAPIView |
-| 2 | /api/post/<<int:pk>>/ | /api2/post/<int:pk>/ | GET | RetrieveAPIView |
+| 2 | /api/post/<<int:pk>>/ | /api2/post/<<int:pk>>/ | GET | RetrieveAPIView |
 | 3 | /api/comment/create/ | /api2/comment/ | POST | CreateAPIView |
-| 4 | /api/like/<int:pk>/ | /api2/post/<int:pk>/like/ | GET |  |
+| 4 | /api/like/<<int:pk>>/ | /api2/post/<<int:pk>>/like/ | GET |  |
 | 5 | /api/catetag/ |  | GET |  |
 
 
