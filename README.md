@@ -41,8 +41,8 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
 | 1 | /api/post/list/ | /api2/post/ | GET | ListAPIView |
 | 2 | /api/post/<<int:pk>>/ | /api2/post/<<int:pk>>/ | GET | RetrieveAPIView |
 | 3 | /api/comment/create/ | /api2/comment/ | POST | CreateAPIView |
-| 4 | /api/like/<<int:pk>>/ | /api2/post/<<int:pk>>/like/ | GET |  |
-| 5 | /api/catetag/ |  | GET |  |
+| 4 | /api/like/<<int:pk>>/ | /api2/post/<<int:pk>>/like/ | GET | UpdateAPIView |
+| 5 | /api/catetag/ | /api2/catetag/ | GET | APIView |
 
 
 # GenericView 동작 로직
