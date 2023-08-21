@@ -27,14 +27,14 @@
     <div class="container">
         <div class="text-center">
             <div class="section-heading">
-                <span class="h2 text-uppercase">Post List</span>&nbsp;
+                <span class="h2 text-uppercase">Class List</span>&nbsp;
                 <span v-if="category" class="h6 fst-italic">( Category: [[ category ]] )</span>
                 <span v-if="tag" class="h6 fst-italic">( Tag: [[ tag ]] )</span>
             </div>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">희망하는 과정을 수강신청하여 시작해보세요.</h3>
         </div>
         <div class="row">
-            <div v-for="post in postList" :key="post.id" class="col-lg-4 col-sm-6 mb-4">
+            <div v-for="post in postList" :key="post.id" class="col-lg-3 col-sm-6 mb-3">
                 <div class="portfolio-item">
                     <a class="portfolio-link" :href="`/blog/post/${post.id}/#post`">
                         <div class="portfolio-hover">
@@ -56,11 +56,11 @@
         <!-- My Pagination -->
         <ul class="pagination justify-content-center">
             <li :class="prevClass">
-                <div @click="firstPage" class="page-link">first</div>
+                <div @click="firstPage" class="page-link">첫</div>
             </li>
 
             <li :class="prevClass">
-                <div @click="prevPage" class="page-link">prev</div>
+                <div @click="prevPage" class="page-link">이전</div>
             </li>
 
             <li v-for="page in pages" :class="pageClass(page)">
@@ -68,18 +68,19 @@
             </li>
 
             <li :class="nextClass">
-                <div @click="nextPage" class="page-link">next</div>
+                <div @click="nextPage" class="page-link">다음</div>
             </li>
 
             <li :class="nextClass">
-                <div @click="lastPage" class="page-link">last</div>
+                <div @click="lastPage" class="page-link">끝</div>
             </li>            
         </ul>
 
     </div>
 </section>
 
-<!-- Iam -->
+
+{% comment %} <!-- Iam -->
 <section class="page-section bg-light" id="team">
     <div class="container">
         <div class="text-center">
@@ -121,7 +122,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 {% endblock %}
 
 {% block footer %}
@@ -130,7 +131,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-4 text-lg-start">
-                Copyright &copy; Your Website [[ currentYear ]]
+                Copyright &copy; Online study flatform [[ currentYear ]]
                 <!-- This script automatically adds the current year to your website footer-->
                 <!-- (credit: https://updateyourfooter.com/)-->
                 <!-- <script>
@@ -143,8 +144,8 @@
                 <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                <a class="link-dark text-decoration-none me-3" href="#!">random word1</a>
+                <a class="link-dark text-decoration-none" href="#!">random word2</a>
             </div>
         </div>
     </div>
