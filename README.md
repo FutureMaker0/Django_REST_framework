@@ -32,6 +32,7 @@
 
 ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
   - ViewSet의 장점은, 테이블을 만들고 나서 테이블의 내용을 있는 그대로 간단하게 볼 수 있다는 것이 장점.
+  - 또, ViewSet을 사용하게 되면 router를 사용할 수 있는데, url을 자동으로 만들어준다.
   - DRF에서 Generic이란 용어는, Database 관련 처리를 하는 경우 사용된다.
 #
 
