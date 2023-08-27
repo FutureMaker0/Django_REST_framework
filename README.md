@@ -95,7 +95,10 @@ ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + 
       - S(data=xxx)
       - is_valid, validated_data
   3. instance로 변환 후 DB에 save()
- 
+
+ # drf-spectacular
+ - drf를 통해서 설계된 API를 OAS3.0에 맞추어 문서화를 도와주는 라이브러리
+ - 관련 사이트: https://velog.io/@catveloper/DRF-Spectacular-%EC%82%AC%EC%9A%A9%EB%B2%95 
 
 
 
