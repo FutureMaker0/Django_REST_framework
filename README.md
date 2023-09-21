@@ -24,11 +24,16 @@
 # GenericAPIView 의 기본 5가지 제네릭뷰 (C.R.U.D)
 | 순번 | APIView | 구동 원리 | 역할 | HTTP 관점 |
 |---|---|---|---|---|
-| 1 | CreateAPIView|GenericAPIView + CreateModelMixin | Create | POST |
-| 2 | DestroyAPIView|GenericAPIView + DestroyModelMixin | Delete | GET |
-| 3 | ListAPIView|GenericAPIView + ListModelMixin | Read | GET |
-| 4 | RetrieveAPIView|GenericAPIView + RetrieveModelMixin | - | UPDATE, PATCH |
-| 5 | UpdateAPIView|GenericAPIView + UpdateModelMixin | Update | DELETE |
+| 1 | CreateAPIView | GenericAPIView + CreateModelMixin | Create | POST |
+| 2 | DestroyAPIView | GenericAPIView + DestroyModelMixin | Delete | GET |
+| 3 | ListAPIView | GenericAPIView + ListModelMixin | Read | GET |
+| 4 | RetrieveAPIView | GenericAPIView + RetrieveModelMixin | - | UPDATE, PATCH |
+| 5 | UpdateAPIView | GenericAPIView + UpdateModelMixin | Update | DELETE |
+| 6 | ListCreateAPIView |  |  |  |
+| 7 | RetrieveUpdateAPIView |  |  |  |
+| 8 | RetrieveDestroyAPIView |  |  |  |
+| 9 | RetrieveUpdateDestroyAPIView |  |  |  |
+
 
 ModelViewSet = CreateAPIView + DestroyAPIView + ListAPIView + RetrieveAPIView + UpdateAPIView
   - ViewSet의 장점은, 테이블을 만들고 나서 테이블의 내용을 있는 그대로 간단하게 볼 수 있다는 것이 장점.
